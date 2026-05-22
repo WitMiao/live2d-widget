@@ -22,7 +22,7 @@ class AppSubdelegate extends LAppSubdelegate {
       preserveDrawingBuffer: true
     });
     if (!context) {
-      alert('Cannot initialize WebGL. This browser does not support.');
+      logger.error('Cannot initialize WebGL. This browser does not support.');
       return false;
     }
     this._glManager._gl = context;
