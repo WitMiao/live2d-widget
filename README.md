@@ -52,6 +52,7 @@
 | `modelId` | `number` | `0` | 默认模型 id |
 | `tools` | `string[]` | 见 `autoload.js` | 加载的小工具按钮 |
 | `drag` | `boolean` | `false` | 支持拖动看板娘 |
+| `showToggleAfterQuit` | `boolean` | `true` | 点击关闭后是否显示重新唤起按钮；若设为 `false`，则会永久关闭，直到清除本地存储 |
 | `logLevel` | `string` | `error` | 日志等级，支持 `error`，`warn`，`info`，`trace` |
 
 ## 模型仓库

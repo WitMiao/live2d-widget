@@ -52,6 +52,7 @@ You can refer to the source code of `dist/autoload.js` to see the available conf
 | `modelId` | `number` | `0` | Default model id |
 | `tools` | `string[]` | see `autoload.js` | Buttons of the loaded tools |
 | `drag` | `boolean` | `false` | Make the widget draggable |
+| `showToggleAfterQuit` | `boolean` | `true` | Whether to show the toggle button after quitting; if `false`, quitting permanently disables the widget until local storage is cleared |
 | `logLevel` | `string` | `error` | Log level: `error`, `warn`, `info`, `trace` |
 
 ## Model Repository
