@@ -44,7 +44,6 @@ class PlatformManager {
             gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR_MIPMAP_NEAREST);
             gl.generateMipmap(gl.TEXTURE_2D);
             model.setTexture(no, texture);
-            texture = null;
             if (typeof callback == 'function')
                 callback();
         };
