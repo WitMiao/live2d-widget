@@ -27,8 +27,16 @@ class PlatformManager {
         loadedImage.src = path;
         loadedImage.onload = () => {
             const canvas = document.getElementById('live2d');
+            if (!canvas) {
+                logger.error('Canvas live2d not found.');
+                return -1;
+            }
             const gl = canvas.getContext('webgl2', { premultipliedAlpha: true, preserveDrawingBuffer: true });
-            let texture = gl.createTexture();
+            if (!gl) {
+                logger.error('Failed to create WebGL context.');
+                return -1;
+            }
+            const texture = gl.createTexture();
             if (!texture) {
                 logger.error('Failed to generate gl texture name.');
                 return -1;

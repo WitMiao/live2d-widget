@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment, prefer-const */
+// @ts-nocheck
 /* global Live2D, Live2DMotion, AMotion, UtSystem, MotionQueueManager, PhysicsHair, UtDebug, PartsDataID */
 /**
  *
